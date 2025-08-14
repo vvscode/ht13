@@ -7,7 +7,8 @@
     "prepare": "husky",
     "format:check": "prettier --check",
     "format:fix": "prettier --write",
-    "build": "npx webpack --mode=production"
+    "build": "npx webpack --mode=production",
+    "dev": "npx webpack serve --mode=development"
   },
   "lint-staged": {
     "*.{css,js,html,yml,md}": "prettier --write"
@@ -33,6 +34,7 @@
     "prettier": "^3.6.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.101.2",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
   }
 }
