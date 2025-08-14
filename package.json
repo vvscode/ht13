@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "format:check": "prettier --check",
+    "format:fix": "prettier --write"
+  },
+  "lint-staged": {
+    "*.{css,js,html,yml,md}": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -16,5 +22,10 @@
     "url": "https://github.com/vvscode/ht13/issues"
   },
   "homepage": "https://github.com/vvscode/ht13#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2"
+  }
 }
