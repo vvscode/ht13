@@ -1,1 +1,4 @@
-document.querySelector('h1').innerText = 'JS is alive';
+import "./styles.css";
+import { main } from "./main";
+
+main();
