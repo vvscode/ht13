@@ -1,0 +1,32 @@
+{
+  "name": "ht13",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "prepare": "husky",
+    "format:check": "prettier --check",
+    "format:fix": "prettier --write",
+    "build": "mkdir dist && cp index.html dist && cp -r src dist"
+  },
+  "lint-staged": {
+    "*.{css,js,html,yml,md}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvscode/ht13.git"
+  },
+  "keywords": [],
+  "author": "Vasil Vanchuk <v.vanchuk@tinkoff.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvscode/ht13/issues"
+  },
+  "homepage": "https://github.com/vvscode/ht13#readme",
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "prettier": "^3.6.2"
+  }
+}
