@@ -1,1 +1,3 @@
-document.querySelector('h1').innerText = 'JS is alive';
+import { main } from "./main";
+
+main();
